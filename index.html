@@ -11,46 +11,66 @@
   </head>
 
   <body class="bg-pattern bg-cover">
-    <header>
-      <div class="p-6 inline-flex">
+    <header class="lg:absolute lg:top-6">
+      <div class="p-6 inline-flex lg:max-w-md lg:m-auto md:py-8">
         <img class="w-2/3 md:w-full" src="/images/logo.svg" alt="logo" />
       </div>
 
-      <img class="w-full mb-12 md:hidden" src="/images/hero-mobile.jpg" alt="Female in orange blouse." />
+      <img class="w-full mb-12 lg:hidden" src="/images/hero-mobile.jpg" alt="Female in orange blouse." />
     </header>
 
-    <main class="text-center px-5 mt-16">
-      <h1 class="text-4xl text-dark font-semibold uppercase tracking-extremeWide">
-        <span class="block text-primary font-light">we're</span> coming<br />
-        soon
-      </h1>
+    <main class="px-5 mt-16 lg:flex lg:justify-between sm:mb-6 lg:p-0 lg:mt-0">
+      <section class="text-center md:mb-3 lg:text-left lg:flex lg:flex-col">
+        <h1 class="text-4xl text-dark font-semibold uppercase tracking-extremeWide md:text-6xl lg:text-7xl">
+          <span class="block text-primary font-light">we're</span> coming<br />
+          soon
+        </h1>
 
-      <p class="text-sm text-primary my-8 font-normal leading-6 px-3">
-        Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date
-        with announcements and our launch deals.
-      </p>
+        <p class="text-sm text-primary my-8 font-normal leading-6 px-3 md:text-base md:leading-relaxed md:px-20">
+          Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with
+          announcements and our launch deals.
+        </p>
 
-      <form id="form" class="relative">
-        <fieldset>
-          <label for="email"></label>
-          <input
-            class="border border-solid rounded-3xl w-11/12 px-6 py-3 outline-none placeholder-primary text-sm"
-            name="email"
-            type="text"
-            placeholder="Email Address"
-          />
-        </fieldset>
-        <button
-          class="bg-gradient-to-r from-secondary to-tertiary rounded-3xl px-6 py-3 absolute top-px right-3.5 shadow"
-          type="submit"
-        >
-          <img src="/images/icon-arrow.svg" alt="Right arrow icon" />
-        </button>
+        <form id="form" class="relative">
+          <fieldset>
+            <label for="email"></label>
+            <input
+              class="border border-solid rounded-3xl w-11/12 px-6 py-3 outline-none placeholder-primary text-sm md:w-8/12"
+              name="email"
+              type="text"
+              placeholder="Email Address"
+            />
+            <p id="error-msg" class="text-left text-xs text-error hidden mt-3 relative left-10perc md:left-20perc">
+              Please provide a valid email
+            </p>
+          </fieldset>
 
-        <p id="error-msg" class="text-left flex text-xs ml-5 text-error hidden">Please provide a valid email</p>
-      </form>
+          <button
+            class="
+              bg-gradient-to-r
+              from-secondary
+              to-tertiary
+              rounded-3xl
+              px-6
+              py-3
+              absolute
+              top-px
+              right-3.5
+              shadow
+              sm:right-4
+              big-tablet:right-36
+              md:right-28
+            "
+            type="submit"
+          >
+            <img src="/images/icon-arrow.svg" alt="Right arrow icon" />
+          </button>
+        </form>
+      </section>
 
-      <img class="hidden md:block" src="/images/hero-desktop.jpg" alt="Female in orange blouse." />
+      <section>
+        <img class="hidden lg:block lg:w-full" src="/images/hero-desktop.jpg" alt="Female in orange blouse." />
+      </section>
     </main>
 
     <script type="module" src="/src/main.ts"></script>

@@ -20,6 +20,14 @@ export default defineConfig({
               backgroundImage: {
                 pattern: "url('./images/bg-pattern-desktop.svg')",
               },
+              inset: {
+                '10perc': '10%',
+                '15perc': '15%',
+                '20perc': '20%',
+              },
+              screens: {
+                'big-tablet': '960px',
+              },
             },
             fontFamily: {
               sans: ["'Josefin Sans'", 'sans-serif'],
