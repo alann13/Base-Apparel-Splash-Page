@@ -6,41 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
     <title>inThaHouse | Base Apparel</title>
   </head>
-  <body class="bg-pattern h-screen bg-cover">
+
+  <body class="bg-pattern bg-cover">
     <header>
-      <div class="p-6">
-        <img src="/images/logo.svg" alt="logo" />
+      <div class="p-6 inline-flex">
+        <img class="w-2/3 md:w-full" src="/images/logo.svg" alt="logo" />
       </div>
-      <img
-        class="w-full mb-12 md:hidden"
-        src="/images/hero-mobile.jpg"
-        alt="Female in orange blouse."
-      />
+
+      <img class="w-full mb-12 md:hidden" src="/images/hero-mobile.jpg" alt="Female in orange blouse." />
     </header>
-    <main class="text-center px-5">
-      <h1 class="text-red"><span>we're</span> coming soon</h1>
-      <p>
-        Hello fellow shoppers! We're currently building our new fashion store.
-        Add your email below to stay up-to-date with announcements and our
-        launch deals.
+
+    <main class="text-center px-5 mt-16">
+      <h1 class="text-4xl text-dark font-semibold uppercase tracking-extremeWide">
+        <span class="block text-primary font-light">we're</span> coming<br />
+        soon
+      </h1>
+
+      <p class="text-sm text-primary my-8 font-normal leading-6 px-3">
+        Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date
+        with announcements and our launch deals.
       </p>
-      <form>
-        <label for="email"></label>
-        <input type="email" placeholder="Email Address" />
-        <button>submit</button>
+
+      <form id="form" class="relative">
+        <fieldset>
+          <label for="email"></label>
+          <input
+            class="border border-solid rounded-3xl w-11/12 px-6 py-3 outline-none placeholder-primary text-sm"
+            name="email"
+            type="text"
+            placeholder="Email Address"
+          />
+        </fieldset>
+        <button
+          class="bg-gradient-to-r from-secondary to-tertiary rounded-3xl px-6 py-3 absolute top-px right-3.5 shadow"
+          type="submit"
+        >
+          <img src="/images/icon-arrow.svg" alt="Right arrow icon" />
+        </button>
+
+        <p id="error-msg" class="text-left flex text-xs ml-5 text-error hidden">Please provide a valid email</p>
       </form>
-      <img
-        class="hidden md:block"
-        src="/images/hero-desktop.jpg"
-        alt="Female in orange blouse."
-      />
+
+      <img class="hidden md:block" src="/images/hero-desktop.jpg" alt="Female in orange blouse." />
     </main>
+
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
