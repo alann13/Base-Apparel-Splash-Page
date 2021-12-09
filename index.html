@@ -11,56 +11,45 @@
   </head>
 
   <body class="bg-pattern bg-cover">
-    <header class="lg:absolute lg:top-6">
-      <div class="p-6 inline-flex lg:max-w-md lg:m-auto md:py-8">
+    <header class="xl:absolute xl:top-6 xl:px-36">
+      <!-- LOGO -->
+      <div class="p-6 inline-flex lg:max-w-md lg:m-auto md:py-8 xl:px-0">
         <img class="w-2/3 md:w-full" src="/images/logo.svg" alt="logo" />
       </div>
 
-      <img class="w-full mb-12 lg:hidden" src="/images/hero-mobile.jpg" alt="Female in orange blouse." />
+      <!-- MOBILE HERO -->
+      <img class="w-full mb-12 xl:hidden" src="/images/hero-mobile.jpg" alt="Female in orange blouse." />
     </header>
 
-    <main class="px-5 mt-16 lg:flex lg:justify-between sm:mb-6 lg:p-0 lg:mt-0">
-      <section class="text-center md:mb-3 lg:text-left lg:flex lg:flex-col">
+    <main class="px-5 mt-16 sm:mb-6 xl:flex xl:p-0 xl:my-0">
+      <!-- Headings with Form -->
+      <section class="text-center xl:text-left xl:flex xl:flex-col xl:text-left xl:justify-center xl:w-7/12 xl:px-36">
         <h1 class="text-4xl text-dark font-semibold uppercase tracking-extremeWide md:text-6xl lg:text-7xl">
           <span class="block text-primary font-light">we're</span> coming<br />
           soon
         </h1>
 
-        <p class="text-sm text-primary my-8 font-normal leading-6 px-3 md:text-base md:leading-relaxed md:px-20">
+        <p class="text-sm text-primary my-8 font-normal leading-6 px-3 md:text-base md:leading-loose md:px-20 xl:p-0">
           Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with
           announcements and our launch deals.
         </p>
 
-        <form id="form" class="relative">
+        <form id="form" class="relative w-11/12 md:w-8/12 xl:w-full m-auto xl:m-0">
           <fieldset>
             <label for="email"></label>
             <input
-              class="border border-solid rounded-3xl w-11/12 px-6 py-3 outline-none placeholder-primary text-sm md:w-8/12"
+              class="border w-full border-solid rounded-3xl px-6 py-3 outline-none placeholder-primary text-sm"
               name="email"
               type="text"
               placeholder="Email Address"
             />
-            <p id="error-msg" class="text-left text-xs text-error hidden mt-3 relative left-10perc md:left-20perc">
+            <p id="error-msg" class="text-left text-xs text-error hidden mt-3 relative left-10perc md:left-20perc xl:left-8">
               Please provide a valid email
             </p>
           </fieldset>
 
           <button
-            class="
-              bg-gradient-to-r
-              from-secondary
-              to-tertiary
-              rounded-3xl
-              px-6
-              py-3
-              absolute
-              top-px
-              right-3.5
-              shadow
-              sm:right-4
-              big-tablet:right-36
-              md:right-28
-            "
+            class="bg-gradient-to-r from-secondary to-tertiary rounded-3xl px-6 py-3 absolute top-px right-0 shadow xl:px-8"
             type="submit"
           >
             <img src="/images/icon-arrow.svg" alt="Right arrow icon" />
@@ -68,8 +57,9 @@
         </form>
       </section>
 
-      <section>
-        <img class="hidden lg:block lg:w-full" src="/images/hero-desktop.jpg" alt="Female in orange blouse." />
+      <!-- DESKTOP PORTION -->
+      <section class="w-5/12">
+        <img class="hidden h-screen xl:block xl:w-full" src="/images/hero-desktop.jpg" alt="Female in orange blouse." />
       </section>
     </main>
 
